@@ -4,13 +4,8 @@ Welcome to the **Templates** repository! Here, I put any thingies in here I make
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [License](#license)
 - [Contact](#contact)
-
-## Introduction
-
-The **Templates** repository is a one-stop shop for template programs and examples. The templates are organized by language and framework, making it easy to navigate and find what you need.
 
 ## License
 
