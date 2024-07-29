@@ -1,0 +1,37 @@
+# Title: action_schema.yaml
+# Version: 1.0
+
+openapi: 3.1.0  # Specify the OpenAPI version
+info:
+  title: Test Actions API  # Title of the API
+  description: API for testing actions with a GPT.  # Brief description of the API
+  version: 1.0.0  # Version of the API
+servers:
+  - url: https://changethistoyourcustomurl.loca.lt  # Server URL exposed via LocalTunnel
+    description: Exposed server via LocalTunnel  # Description of the server
+paths:
+  /testactions:
+    post:
+      operationId: testActions  # Unique operation ID for the POST /testactions endpoint
+      summary: Test actions endpoint  # Summary of the endpoint's functionality
+      responses:
+        '200':  # Response for a successful request
+          description: Test went successfully  # Description of the 200 response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string  # Type of the 'message' field
+                    example: Test went successfully!  # Example value for the 'message' field
+        '500':  # Response for an unsuccessful request
+          description: Test unsuccessful  # Description of the 500 response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string  # Type of the 'message' field
+                    example: Test unsuccessful! Is the server and localtunnel working?  # Example value for the 'message' field
